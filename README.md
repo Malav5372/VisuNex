@@ -43,8 +43,6 @@ In this repository we include all the aesthetic embeddings used in the paper. Al
 * `gloomcore.pt`
 * `glowwave.pt`
   
-See the paper to see how they were obtained.
-
 In addition, new aesthetic embeddings have been incorporated:
 * `fantasy.pt`: created from [https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.5plus](https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.5plus) by filtering only the images with word "fantasy" in the caption. The top 2000 images by score are selected for the embedding.
 * `flower_plant.pt`: created from [https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.5plus](https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.5plus) by filtering only the images with word "plant", "flower", "floral", "vegetation" or "garden" in the caption. The top 2000 images by score are selected for the embedding.
