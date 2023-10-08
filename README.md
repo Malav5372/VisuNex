@@ -57,7 +57,8 @@ Let's see some examples now. This would be with the un-personalized, original SD
 python scripts/txt2img.py --prompt "Roman city on top of a ridge, sci-fi illustration by Greg Rutkowski #sci-fi detailed vivid colors gothic concept illustration by James Gurney and Zdzislaw Beksiński vivid vivid colorsg concept illustration colorful interior" --seed 332 --plms  --aesthetic_steps 0 --W 768 --aesthetic_embedding aesthetic_embeddings/laion_7plus.pt
 ```
 
-![sample](assets/grid-0131.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/04f066e0-1aea-4dcf-a967-5bb558b4083e)
+
 
 If we now personalize it with the LAION embedding, note how the images get more floral patterns, as this is one common pattern of the LAION aesthetics dataset:
 
@@ -65,7 +66,8 @@ If we now personalize it with the LAION embedding, note how the images get more 
 python scripts/txt2img.py --prompt "Roman city on top of a ridge, sci-fi illustration by Greg Rutkowski #sci-fi detailed vivid colors gothic concept illustration by James Gurney and Zdzislaw Beksiński vivid vivid colorsg concept illustration colorful interior" --seed 332 --plms  --aesthetic_steps 5 --W 768 --aesthetic_embedding aesthetic_embeddings/laion_7plus.pt
 ```
 
-![sample](assets/grid-0133.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/5331f9f8-67b9-4d8c-a7ca-de6bbafedb7e)
+
 
 Increasing the number of steps more...
 
@@ -73,7 +75,8 @@ Increasing the number of steps more...
 python scripts/txt2img.py --prompt "Roman city on top of a ridge, sci-fi illustration by Greg Rutkowski #sci-fi detailed vivid colors gothic concept illustration by James Gurney and Zdzislaw Beksiński vivid vivid colorsg concept illustration colorful interior" --seed 332 --plms  --aesthetic_steps 8 --W 768 --aesthetic_embedding aesthetic_embeddings/laion_7plus.pt
 ```
 
-![sample](assets/grid-0135.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/abd1db98-8c43-42be-ba73-2738eb4d2e7d)
+
 
 
 Another example, this we will be using another embedding that further exacerabates the floral patterns. This is the original SD output:
@@ -82,7 +85,8 @@ Another example, this we will be using another embedding that further exacerabat
 python scripts/txt2img.py --prompt "Cyberpunk ikea, close up shot from the top, anime art, greg rutkowski, studio ghibli, dramatic lighting" --seed 332 --plms --ckpt ../stable-diffusion/sd-v1-4.ckpt --H 768 --aesthetic_steps 0  --aesthetic_embedding aesthetic_embeddings/flower_plant.pt
 ```
 
-![sample](assets/grid-0210.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/9b0c9449-79f6-44d3-8735-949b04e88894)
+
 
 
 And this is with 20 steps with the `flower_plant.pt` embedding:
@@ -91,8 +95,7 @@ And this is with 20 steps with the `flower_plant.pt` embedding:
 python scripts/txt2img.py --prompt "Cyberpunk ikea, close up shot from the top, anime art, greg rutkowski, studio ghibli, dramatic lighting" --seed 332 --plms --ckpt ../stable-diffusion/sd-v1-4.ckpt --H 768 --aesthetic_steps 20  --aesthetic_embedding aesthetic_embeddings/flower_plant.pt
 ```
 
-![sample](assets/grid-0207.png)
-
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/4447c083-fade-4d42-b91c-09a4d9ab18e6)
 
 
 Let's see another example:
@@ -100,7 +103,8 @@ Let's see another example:
 ```bash
 python scripts/txt2img.py --prompt "A portal towards other dimension" --plms  --seed 332 --aesthetic_steps 15 --aesthetic_embedding aesthetic_embeddings/sac_8plus.pt
 ```
-![sample](assets/grid-0073.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/d89dcd66-916c-492b-b5ca-1f295840b471)
+
 
 If we increase it to 20 steps, we get a more pronounced effect:
 
@@ -108,7 +112,8 @@ If we increase it to 20 steps, we get a more pronounced effect:
 python scripts/txt2img.py --prompt "A portal towards other dimension" --plms  --seed 332 --aesthetic_steps 20 --aesthetic_embedding aesthetic_embeddings/sac_8plus.pt
 ```
 
-![sample](assets/grid-0072.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/ee324f1f-e565-4e77-91c7-822d7ecd7ff4)
+
 
 We can set the steps to 0 to get the outputs for the original stable diffusion model:
 
@@ -116,7 +121,8 @@ We can set the steps to 0 to get the outputs for the original stable diffusion m
 python scripts/txt2img.py --prompt "A portal towards other dimension" --plms  --seed 332 --aesthetic_steps 0 --aesthetic_embedding aesthetic_embeddings/sac_8plus.pt
 ```
 
-![sample](assets/grid-0075.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/7fc54446-75da-4e83-a089-2632ce943ee1)
+
 
 Note that since we have used the SAC dataset for the personalization, the optimized results are more biased towards fantasy aesthetics.
 
@@ -133,14 +139,16 @@ Some examples with three works from the painter Aivazovsky: [reference_images/ai
 python scripts/txt2img.py --prompt "a painting of a tree, oil on canvas" --plms  --seed 332 --aesthetic_steps 50 --aesthetic_embedding aesthetic_embeddings/aivazovsky.pt
 ```
 
-![sample](assets/grid-0089.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/f854154d-10f3-4e6c-a6dc-e014e7a7c692)
+
 
 Note that just adding the modifier "by Aivazoysky" to the prompt does not work so well:
 
 ```bash
 python scripts/txt2img.py --prompt "a painting of a tree, oil on canvas by Aivazovsky" --plms --seed 332 --aesthetic_steps 0 --aesthetic_embedding aesthetic_embeddings/aivazovsky.pt
 ```
-![sample](assets/grid-0091.png)
+
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/59f48c48-ba51-4825-a386-b054ceb968ff)
 
 
 Another example, mixing the styles of two painters (one in the prompt, the other as the aesthetic embedding):
@@ -148,14 +156,16 @@ Another example, mixing the styles of two painters (one in the prompt, the other
 ```bash
 96 python scripts/txt2img.py --prompt "a gothic cathedral in a stunning landscape by Jean-Honoré Fragonard" --plms --seed 139782398 --aesthetic_steps 12 --aesthetic_embedding aesthetic_embeddings/aivazovsky.pt
 ```
-![sample](assets/grid-0096.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/0addc58c-c848-442e-995a-7e5d2fd6216f)
+
 
 Whereas the original SD would output this:
 
 ```bash
 python scripts/txt2img.py --prompt "a gothic cathedral in a stunning landscape by Jean-Honoré Fragonard" --plms --seed 139782398 --aesthetic_steps 0 --aesthetic_embedding aesthetic_embeddings/aivazovsky.pt
 ```
-![sample](assets/grid-0097.png)
+
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/5bc32dda-2242-49a2-aa88-c2956def2244)
 
 
 ## Using it with other fine-tuned SD models
@@ -168,14 +178,16 @@ The aesthetic gradients technique can be used with any fine-tuned SD model.
 python scripts/txt2img.py --prompt "robotic cat with wings" --plms --seed 7 --ckpt ../stable-diffusion/ema-only-epoch\=000142.ckpt  --aesthetic_steps 15 --aesthetic_embedding aesthetic_embeddings/laion_7plus.pt
 ```
 
-![sample](assets/grid-0033.png)
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/93c6bd8b-3fa7-4d7d-91c8-49c9557a2787)
+
 
 The previous prompt was personalized with the LAION aesthetics embedding, so it has more childish-like than using just the original model:
 
 ```bash
 python scripts/txt2img.py --prompt "robotic cat with wings" --plms --seed 7 --ckpt ../stable-diffusion/ema-only-epoch\=000142.ckpt  --aesthetic_steps 0 --aesthetic_embedding aesthetic_embeddings/laion_7plus.pt
 ```
-![sample](assets/grid-0035.png)
+
+![image](https://github.com/Malav5372/VisuNex/assets/144440737/a7a83f2f-b8b3-4232-aa9c-8ecc748235fb)
 
 
 ## Further resources
