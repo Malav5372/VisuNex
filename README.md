@@ -39,11 +39,7 @@ scores distribution
 
 ## Prerequisites
 
-This is a fork of the original stable-diffusion repository, so the prerequisites are the same as the [original repository](https://github.com/CompVis/stable-diffusion/). In particular, when cloning this repo, install the library as:
-
-```bash
-pip install -e .
-```
+This is a fork of the original stable-diffusion repository, so the prerequisites are the same as the [original repository](https://github.com/CompVis/stable-diffusion/).
 
 ## Usage 
 
