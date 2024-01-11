@@ -1,4 +1,4 @@
-# VisuNex: Personalized Text-to-Image Generation Using Stable Diffusion 🎨
+## VisuNex: Personalized Text-to-Image Generation Using Stable Diffusion 🎨
 
 ## Project Motive:
 The core motive behind VisuNex is to empower users to infuse their user-defined aesthetics into the visuals it generates. Traditional text-to-image models excel at transforming textual descriptions into images, but they fall short when users aim to convey intricate aesthetic preferences solely through words. VisuNex addresses this challenge head-on, aiming to capture and replicate the subtle nuances of desired aesthetics. VisuNex introduces a groundbreaking framework that tailors text-to-image diffusion models to user preferences. It goes beyond restricting users to predefined categories or single objects, allowing them to define broader aesthetic concepts drawn from extensive image datasets. By guiding the generative process, users can seamlessly incorporate their distinctive artistic preferences into the generated content.
