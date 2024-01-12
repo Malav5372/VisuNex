@@ -3,6 +3,9 @@
 ### Project Motive:
 The core motive behind VisuNex is to empower users to infuse their user-defined aesthetics into the visuals it generates. Traditional text-to-image models excel at transforming textual descriptions into images, but they fall short when users aim to convey intricate aesthetic preferences solely through words. VisuNex addresses this challenge head-on, aiming to capture and replicate the subtle nuances of desired aesthetics. VisuNex introduces an approach that tailors text-to-image diffusion models to user preferences. It goes beyond restricting users to predefined categories or single objects, allowing them to define broader aesthetic concepts drawn from extensive image datasets. By guiding the generative process, users can seamlessly incorporate their distinctive artistic preferences into the generated content.
 
+### prerequisites
+This is a fork of the original stable-diffusion repository, so the prerequisites are the same as the [original repository](https://github.com/CompVis/stable-diffusion/)
+
 ### Personalization Variants:
 VisuNex offers personalized variants that harness the potential of SAC (Simulacra Aesthetic Captions) 8+ and LAION7+ aesthetic embeddings. This further enhances the user's creative control, providing a versatile platform for image generation.
 
